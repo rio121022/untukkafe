@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Kafe Rio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Menu Kafe Rio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+               <img src="logopullman.png" alt="Coffee">
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h2>Welcome to Kafe Rio</h2>
+        <p>Experience the best dining experience with our exquisite dishes and exceptional service.</p>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Our Menu</h2>
+        <div class="menu-section">
+            <div class="menu-header" onclick="toggleContent('coffee-section')">Coffee</div>
+            <div id="coffee-section" class="menu-content">
+                <div class="menu-overlay">
+                    <p>Espresso - $3.00</p>
+                    <p>Americano - $3.50</p>
+                    <p>Latte - $4.00</p>
+                    <p>Cappuccino - $4.00</p>
+                </div>
+                <img src="gambarkopi.jpg" alt="Coffee">
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-header" onclick="toggleContent('tea-section')">Tea</div>
+            <div id="tea-section" class="menu-content">
+                <div class="menu-overlay">
+                    <p>Green Tea - $2.50</p>
+                    <p>Black Tea - $2.50</p>
+                    <p>Herbal Tea - $3.00</p>
+                    <p>Chai Latte - $4.00</p>
+                </div>
+                <img src="images/tea.jpg" alt="Tea">
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-header" onclick="toggleContent('desserts-section')">Desserts</div>
+            <div id="desserts-section" class="menu-content">
+                <div class="menu-overlay">
+                    <p>Chocolate Cake - $4.50</p>
+                    <p>Cheesecake - $4.50</p>
+                    <p>Brownie - $3.00</p>
+                    <p>Ice Cream - $3.50</p>
+                </div>
+                <img src="images/desserts.jpg" alt="Desserts">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Kafe Rio adalah restoran keluarga yang menawarkan sajian kuliner terbaik. Chef kami hanya menggunakan bahan-bahan segar untuk menciptakan hidangan yang lezat dan tak terlupakan.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Address: 123 Food Street, Culinary City</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: contact@kaferio.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kafe Rio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
